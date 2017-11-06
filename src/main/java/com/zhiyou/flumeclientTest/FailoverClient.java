@@ -1,6 +1,5 @@
 package com.zhiyou.flumeclientTest;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
@@ -19,7 +18,7 @@ public class FailoverClient {
 	// initialize RpcClient
 	public FailoverClient() throws Exception {
 		this.properties = new Properties();
-		InputStream inStream = new FileInputStream(new File("failover_client.conf"));
+		InputStream inStream = new FileInputStream("D:\\develop\\workspace\\flumeclientTest\\src\\main\\resources\\failover_client.conf");
 
 		properties.load(inStream);
 
